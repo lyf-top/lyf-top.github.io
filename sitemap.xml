@@ -38,15 +38,6 @@
   </url>
   
   <url>
-    <loc>http://f3f3.top/social/fcircle/index.html</loc>
-    
-    <lastmod>2026-04-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://f3f3.top/site/census/index.html</loc>
     
     <lastmod>2026-04-10</lastmod>
@@ -74,7 +65,25 @@
   </url>
   
   <url>
+    <loc>http://f3f3.top/social/fcircle/index.html</loc>
+    
+    <lastmod>2026-04-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://f3f3.top/life/games/index.html</loc>
+    
+    <lastmod>2026-04-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://f3f3.top/life/movies/index.html</loc>
     
     <lastmod>2026-04-10</lastmod>
     
@@ -101,25 +110,7 @@
   </url>
   
   <url>
-    <loc>http://f3f3.top/life/movies/index.html</loc>
-    
-    <lastmod>2026-04-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://f3f3.top/categories/index.html</loc>
-    
-    <lastmod>2026-04-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://f3f3.top/box/animation/index.html</loc>
     
     <lastmod>2026-04-10</lastmod>
     
@@ -138,6 +129,15 @@
   
   <url>
     <loc>http://f3f3.top/box/gallery/index.html</loc>
+    
+    <lastmod>2026-04-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://f3f3.top/box/animation/index.html</loc>
     
     <lastmod>2026-04-10</lastmod>
     
