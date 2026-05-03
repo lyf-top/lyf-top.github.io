@@ -17,9 +17,9 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>javascript</title>
-    <link href="http://f3f3.top/posts/7.html"/>
-    <id>http://f3f3.top/posts/7.html</id>
+    <title>html&amp;css</title>
+    <link href="http://f3f3.top/posts/5.html"/>
+    <id>http://f3f3.top/posts/5.html</id>
     <published>2026-04-20T10:19:03.000Z</published>
     <updated>2026-04-28T02:43:03.000Z</updated>
     
@@ -38,9 +38,9 @@
   </entry>
   
   <entry>
-    <title>html&amp;css</title>
-    <link href="http://f3f3.top/posts/5.html"/>
-    <id>http://f3f3.top/posts/5.html</id>
+    <title>javascript</title>
+    <link href="http://f3f3.top/posts/7.html"/>
+    <id>http://f3f3.top/posts/7.html</id>
     <published>2026-04-20T10:19:03.000Z</published>
     <updated>2026-04-28T02:43:03.000Z</updated>
     
@@ -65,7 +65,7 @@
     <published>2026-04-20T10:19:03.000Z</published>
     <updated>2026-04-28T02:43:03.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="初识python基础">初识python基础</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="知识库">知识库</h2><p>工具合集</p><ul><li><p><a href="https://www.yuque.com/xiaocaixihuanmamama/efgpqt/nobfcgxixgdfrwsw?#">python相关笔记</a></p></li><li><p><a href="https://pan.baidu.com/s/1uSl3D_MUkDBNb4wJyOVJ8A?pwd=yff9">某机构大模型课程</a></p></li><li><p><a href="https://pan.quark.cn/s/a7dd959e0ac8#/list/share">langchain学习文档</a></p></li><li><p><a href="https://pan.baidu.com/s/1gZ6arL4SUwZTFL0umRNLHg?pwd=agx9">尚硅谷25年java</a></p></li><li><p><a href="https://pan.baidu.com/s/56QGIJCjaefOv_1Idxim-Qg">mybais和spring</a></p></li><li><p><a href="https://dcnvlcpd5t14.feishu.cn/wiki/Wn0Ewchu9icfEpknipWc5F31nA4">java飞书笔记</a></p></li><li><p><a href="https://www.promptingguide.ai/zh/research/llm-agents">AI学习资料</a></p></li><li><p>发布时间： 2025年9月6日 16:31</p><ol><li><p>Java全套资料:<br><a href="https://tcn96swafg7c.feishu.cn/docx/J26Ddtvcdok8pAxEfTFccQm6nXd?from=from_copylink">https://tcn96swafg7c.feishu.cn/docx/J26Ddtvcdok8pAxEfTFccQm6nXd?from=from_copylink</a></p></li><li><p>Java实战项目:<br><a href="https://tcn96swafg7c.feishu.cn/docx/Kf7Ldfj3jo11x6xrbDTc4ONVnrc?from=from_copylink">https://tcn96swafg7c.feishu.cn/docx/Kf7Ldfj3jo11x6xrbDTc4ONVnrc?from=from_copylink</a></p></li><li><p>Java面试题:<br><a href="https://tcn96swafg7c.feishu.cn/docx/W4iuddsfqo3PphxSXa1cFSrvnNc?from=from_copylink">https://tcn96swafg7c.feishu.cn/docx/W4iuddsfqo3PphxSXa1cFSrvnNc?from=from_copylink</a></p></li><li><p>视频demo:<br><a href="https://tcn96swafg7c.feishu.cn/wiki/space/7542130676837941276?ccm_open_type=lark_wiki_spaceLink&amp;open_tab_from=wiki_home">https://tcn96swafg7c.feishu.cn/wiki/space/7542130676837941276?ccm_open_type=lark_wiki_spaceLink&amp;open_tab_from=wiki_home</a></p></li></ol></li></ul><h2 id="初识python基础">初识python基础</h2>]]></content>
     
     
     <summary type="html">🥧python学习之路开启</summary>
