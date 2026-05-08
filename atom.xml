@@ -17,27 +17,6 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>javascript</title>
-    <link href="http://f3f3.top/posts/7.html"/>
-    <id>http://f3f3.top/posts/7.html</id>
-    <published>2026-04-20T10:19:03.000Z</published>
-    <updated>2026-04-28T02:43:03.000Z</updated>
-    
-    
-    <summary type="html">🥧前端学习之路开启</summary>
-    
-    
-    
-    <category term="学习笔记" scheme="http://f3f3.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="前端" scheme="http://f3f3.top/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="前端基础" scheme="http://f3f3.top/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
     <title>python大模型</title>
     <link href="http://f3f3.top/posts/0.html"/>
     <id>http://f3f3.top/posts/0.html</id>
@@ -57,6 +36,27 @@
     <category term="python" scheme="http://f3f3.top/tags/python/"/>
     
     <category term="python基础" scheme="http://f3f3.top/tags/python%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascript</title>
+    <link href="http://f3f3.top/posts/7.html"/>
+    <id>http://f3f3.top/posts/7.html</id>
+    <published>2026-04-20T10:19:03.000Z</published>
+    <updated>2026-04-28T02:43:03.000Z</updated>
+    
+    
+    <summary type="html">🥧前端学习之路开启</summary>
+    
+    
+    
+    <category term="学习笔记" scheme="http://f3f3.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="前端" scheme="http://f3f3.top/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="前端基础" scheme="http://f3f3.top/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
