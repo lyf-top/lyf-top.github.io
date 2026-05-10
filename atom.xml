@@ -6,7 +6,7 @@
   <link href="http://f3f3.top/atom.xml" rel="self"/>
   
   <link href="http://f3f3.top/"/>
-  <updated>2026-04-28T02:43:03.000Z</updated>
+  <updated>2026-05-13T02:43:03.000Z</updated>
   <id>http://f3f3.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java学习笔记下</title>
+    <link href="http://f3f3.top/posts/20.html"/>
+    <id>http://f3f3.top/posts/20.html</id>
+    <published>2026-05-10T10:19:03.000Z</published>
+    <updated>2026-05-13T02:43:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="异常">异常</h2><h3 id="初识">初识</h3><details class="folding-tag" red><summary> 初识 </summary>              <div class='content'>              <p><strong>异常（Exception）</strong> 是指程序在运行过程中出现的错误情况，这些错误可能导致程序的正常流程中断。异常可以是由程序自身的逻辑错误引起，也可以是由外部因素（如文件未找到、网络中断等）导致。</p>              </div>            </details><details class="folding-tag" yellow><summary> 层级结构 </summary>              <div class='content'>              <p>Error（错误）<br>描述：错误通常指的是由Java虚拟机（JVM）自身引起的严重问题，这些问题往往超出了程序的控制。错误通常无法通过程序代码来恢复，因此是不建议进行捕获和处理的（虽然它们可以写在 catch 后的括号中）。<br>示例：常见的错误有 OutOfMemoryError（内存不足）、StackOverflowError（栈溢出）和 NoClassDefFoundError（类定义未找到）。<br>处理建议：对于错误，通常不需要程序员处理，发生后程序很可能会直接终止。正确的做法是优化代码以避免这些错误的发生。</p><p>Exception（异常）<br>描述：异常是程序运行过程中可以被捕获并处理的问题。当程序遇到异常时，可以通过适当的处理机制（如 try-catch 块）来防止程序崩溃。<br>分类：<br>检查型异常（Checked Exceptions）：又名，编译时异常</p><p>描述：检查型异常是在编译时被检查的异常。程序员必须在代码中进行处理，否则编译器会报错。它们通常表示外部环境的问题，如文件未找到、网络连接失败等。<br>示例：IOException（输入输出异常）、SQLException（SQL异常）、ClassNotFoundException（类未找到异常）。<br>处理方式：使用 try-catch 块捕获异常，或在方法签名中使用 throws 声明该异常。<br>非检查型异常（Unchecked Exceptions）：又名，运行时异常</p><p>描述：非检查型异常是在运行时发生的异常，它们通常是由程序的逻辑错误引起的，如数组越界、空指针引用等。编译器不会强制要求程序员处理这些异常。<br>示例：NullPointerException（空指针异常）、ArrayIndexOutOfBoundsException（数组下标越界）、IllegalArgumentException（非法参数异常）。<br>处理方式：虽然不强制要求捕获，但建议在适当的地方进行处理，以提高程序的健壮性。</p>              </div>            </details><p><img src="https://img.f3f3.top/img/2026/05/10/7038f9eb2a98fa94151565603f90bb53.webp" alt=""></p><h3 id="运行时异常">运行时异常</h3><p><img src="https://img.f3f3.top/img/2026/05/10/b2719598cc1b0674553daeb4f2fa96bd.webp" alt=""></p><details class="folding-tag" yellow><summary> 运行时异常 </summary>              <div class='content'>              <p>1.<strong>NullPointerException 空指针异常</strong></p><p>当应用程序试图使用 <code>null</code> 作为对象的引用时，会抛出 <code>NullPointerException</code>。这通常发生在尝试访问对象的方法或属性时。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span> &#123;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">System.out.println(str.length()); <span class="comment">// 尝试使用空引用</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>ArithmeticException 数学运算异常</strong></p><p>当发生算术运算的异常情况时，会抛出 <code>ArithmeticException</code>。最常见的情况是除以零。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span> &#123;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> <span class="number">10</span> / <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>ArrayIndexOutOfBoundsException 数组下标越界异常</strong></p><p>当尝试访问数组中不存在的索引时，会抛出 <code>ArrayIndexOutOfBoundsException</code>。该异常表示访问的索引超出了合法范围（0到数组长度-1）。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span> &#123;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"><span class="type">int</span>[] arr = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>];</span><br><span class="line">System.out.println(arr[-<span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>ClassCastException 类型转换异常</strong></p><p>当尝试将对象强制转换为不兼容的类型时，会抛出 <code>ClassCastException</code>。这通常发生在使用类型转换时。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span> &#123;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"><span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>();</span><br><span class="line"><span class="type">Integer</span> <span class="variable">num</span> <span class="operator">=</span> (Integer)obj;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>NumberFormatException 数字格式不正确异常</strong></p><p>当尝试将字符串转换为数字格式时，如果字符串的格式不符合数字的要求，就会抛出 <code>NumberFormatException</code>。例如，尝试将一个非数字字符串转换为整数。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span> &#123;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"><span class="type">String</span> <span class="variable">str</span> <span class="operator">=</span> <span class="string">&quot;abc&quot;</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> Integer.parseInt(str);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>              </div>            </details><details class="folding-tag" red><summary> 编译时异常 </summary>              <div class='content'>              <p>1、SQLException<br>SQLException 是在与数据库交互时可能发生的异常。它可以指示由于数据库访问错误或其他数据库问题（如查询语法错误、连接失败等）而导致的错误。</p><p>2、IOException<br>IOException 是与输入/输出操作相关的异常，例如文件读取或网络通信时出错。它是处理文件和流操作时的常见异常。</p><p>3、FileNotFoundException<br>FileNotFoundException 是 IOException 的一个子类，在尝试打开一个不存在的文件时抛出。它通常在文件操作时进行检查。</p><p>4、ClassNotFoundException<br>ClassNotFoundException 是当应用程序尝试通过字符串名称加载类，但没有找到对应类时抛出的异常。这通常发生在使用反射或动态加载类时。</p><p>5、EOFException<br>EOFException 是在读取文件时遇到文件末尾（End of File）而未能成功读取数据时抛出的异常。通常在使用数据输入流（DataInputStream）时会遇到此异常。</p>              </div>            </details><h3 id="捕获异常">捕获异常</h3><h4 id="try-catch-语句">try-catch 语句</h4><h2 id="API">API</h2>]]></content>
+    
+    
+    <summary type="html">🥧java学习之路开启</summary>
+    
+    
+    
+    <category term="学习笔记" scheme="http://f3f3.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="javase" scheme="http://f3f3.top/tags/javase/"/>
+    
+    <category term="java基础" scheme="http://f3f3.top/tags/java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>python大模型</title>
@@ -40,9 +63,9 @@
   </entry>
   
   <entry>
-    <title>html&amp;css</title>
-    <link href="http://f3f3.top/posts/5.html"/>
-    <id>http://f3f3.top/posts/5.html</id>
+    <title>javascript</title>
+    <link href="http://f3f3.top/posts/7.html"/>
+    <id>http://f3f3.top/posts/7.html</id>
     <published>2026-04-20T10:19:03.000Z</published>
     <updated>2026-04-28T02:43:03.000Z</updated>
     
@@ -61,9 +84,9 @@
   </entry>
   
   <entry>
-    <title>javascript</title>
-    <link href="http://f3f3.top/posts/7.html"/>
-    <id>http://f3f3.top/posts/7.html</id>
+    <title>html&amp;css</title>
+    <link href="http://f3f3.top/posts/5.html"/>
+    <id>http://f3f3.top/posts/5.html</id>
     <published>2026-04-20T10:19:03.000Z</published>
     <updated>2026-04-28T02:43:03.000Z</updated>
     
